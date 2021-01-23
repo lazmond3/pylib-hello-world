@@ -22,7 +22,7 @@ def read_requirements():
 
 
 setup(
-    name='lazmodn3-pylib-hello-world',
+    name='lazmond3-pylib-hello-world',
     version='1.0.0',
     description='Hello world package',
     long_description=readme,
