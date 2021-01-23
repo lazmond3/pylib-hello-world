@@ -33,7 +33,7 @@ setup(
     license=license,
     entry_points={
         "console_scripts": [
-            "pylib-hello-world=cli:hello"
+            "pylib-hello-world=hello.cli:hello"
         ]
     },
     packages=find_packages(exclude=('tests', 'docs')),
