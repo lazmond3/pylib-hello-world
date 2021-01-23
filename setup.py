@@ -3,6 +3,7 @@
 # Learn more: https://github.com/kennethreitz/setup.py
 
 from setuptools import setup, find_packages
+import os
 
 
 with open('README.rst') as f:
@@ -30,6 +31,11 @@ setup(
     url='https://github.com/lazmond3/pylib-hello-world.git',
     install_requires=read_requirements(),
     license=license,
+    entry_points={
+        "console_scripts": [
+            "pylib-hello-world=cli:hello"
+        ]
+    },
     packages=find_packages(exclude=('tests', 'docs')),
     est_suite='tests'
 )
