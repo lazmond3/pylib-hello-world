@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from . import helpers
 
+
 def get_hmm():
     """Get a thought."""
     return 'hmmm...'
@@ -8,5 +9,5 @@ def get_hmm():
 
 def hmm():
     """Contemplation..."""
-    if helpers.get_answer():
+    if helpers.get_answer_in_helper():
         print(get_hmm())

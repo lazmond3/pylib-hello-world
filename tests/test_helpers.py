@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# from .context import hello
+from .context import hello
+
 import unittest
-from . import context
-hello = context.hello
 
 
 class BasicTestSuite(unittest.TestCase):
@@ -11,6 +10,12 @@ class BasicTestSuite(unittest.TestCase):
 
     def test_absolute_truth_and_meaning(self):
         assert True
+
+    def test_get_message(self):
+        answer = """
+    hello world!
+    """
+        assert (hello.helpers.get_message() == answer)
 
 
 if __name__ == '__main__':
